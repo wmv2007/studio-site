@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div>
+      <img class="logo" src="white-name-logo.png" alt="name-logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Get In Touch</h1>
+    <p>Ready to start your project? Reach out below.</p>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:vincentweb123@gmail.com">vincentweb123@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+254180058221">+254 180 058 221</a></p>
+    </div>
+  </section>
+
+  <form action="https://formspree.io/f/myezwqle" method="POST">
+    <input type="hidden" name="_next" value="thank-you.html">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2026 Vincent-Muriuki.</p>
+  </footer>
+
+</body>
+</html>

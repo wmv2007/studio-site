@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(back-logo.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: rgb(18, 23, 30);
+  line-height: 1.6;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(30, 41, 59);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(20
+  3, 213, 225);
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a.active {
+  color: rgb(37, 99, 235);
+}
+/* hero */
+
+.hero {
+  line-height: 2.7;
+}
+
+.hero p {
+  margin-bottom: 50px;
+}
+
+/*services*/
+
+.services {
+  padding: 60px 40px;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background-color: rgb(248, 250, 252);
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.service-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(37, 99, 235);
+}
+
+.service-card p {
+  font-size: 15px;
+  color: rgb(100, 116, 139);
+}
+
+/* portfolio*/
+
+.portfolio {
+  padding: 60px 40px;
+}
+
+.portfolio h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.portfolio-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-card img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-card h2 {
+  font-size: 18px;
+  color: #2563eb;
+  padding: 15px 15px 5px;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  color: #64748b;
+  padding: 0 15px 20px;
+}
+
+/* contacts */
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin: 30px 0;
+}
+
+.contact-info a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+input,
+textarea {
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 10px;
+  border: 1px solid rgb(170, 182, 195);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.btn {
+  width: 200px;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(30, 41, 59);
+  color: white;
+  font-size: 13px;
+  bottom: 30px;
+}
+
+.thank-you {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.thank-you h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.thank-you p {
+  color: #64748b;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+/* media query*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding: 40px 20x;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio {
+    padding: 40px 20px;
+  }
+
+  .contact {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
